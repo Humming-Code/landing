@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Humming Code - 디지털 경험을 창조하는 개발 파트너</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!-- 로딩 화면 -->
+    <div class="loader">
+        <div class="loader-content">
+            <div class="loader-logo">H</div>
+            <div class="loader-bar"></div>
+        </div>
+    </div>
+
+    <!-- 헤더 및 네비게이션 -->
+    <header class="header" style="translate: none; rotate: none; scale: none; transform: translate(0px, 0px);">
+        <div class="container">
+            <div class="logo">
+                <a href="#" class="logo-link">Humming<span>Code</span></a>
+            </div>
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="#intro" class="nav-link">소개</a></li>
+                    <li class="nav-item"><a href="#services" class="nav-link">서비스</a></li>
+                    <li class="nav-item"><a href="#portfolio" class="nav-link">포트폴리오</a></li>
+                    <li class="nav-item"><a href="#process" class="nav-link">프로세스</a></li>
+                    <li class="nav-item"><a href="#contact" class="nav-link">문의하기</a></li>
+                </ul>
+            </nav>
+            <button class="mobile-menu-toggle" type="button" aria-label="메뉴 열기" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- 히어로 섹션 -->
+    <section class="hero">
+        <div class="hero-bg">
+            <div class="hero-particles"></div>
+        </div>
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">디지털 경험을<br>창조하는 개발 파트너</h1>
+                <p class="hero-subtitle">최신 기술과 창의적인 디자인으로 귀사의 비즈니스를 성장시키는 솔루션을 제공합니다</p>
+                <div class="hero-cta">
+                    <a href="#contact" class="btn btn-primary">프로젝트 의뢰하기</a>
+                    <a href="#portfolio" class="btn btn-outline">포트폴리오 보기</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="hero-device">
+                    <div id="myChart"></div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+            <div class="arrow">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </section>
+
+    <!-- 소개 섹션 -->
+    <section id="intro" class="section intro">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">디지털 성공을 위한<br>최고의 파트너</h2>
+                <p class="section-subtitle">혁신적인 기술과 창의적인 솔루션으로 비즈니스 가치를 높입니다</p>
+            </div>
+            <div class="intro-content">
+                <div class="intro-text">
+                    <p>Humming Code 팀은 웹사이트, 모바일 앱, 기업 솔루션 등 다양한 디지털 제품을 개발하는 전문 외주 개발사입니다. 풍부한 경험과 전문성을 바탕으로 고객의 요구사항을
+                        정확히
+                        파악하여 최적의 솔루션을 제공합니다.</p>
+                    <!-- <div class="stats-container">
+                        <div class="stat-item">
+                            <span class="stat-number" data-count="150">0</span>
+                            <span class="stat-label">완료 프로젝트</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number" data-count="45">0</span>
+                            <span class="stat-label">파트너사</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number" data-count="8">0</span>
+                            <span class="stat-label">전문 개발자</span>
+                        </div>
+                    </div> -->
+                </div>
+                <div class="intro-image">
+                    <div class="process-carousel">
+                        <div class="carousel-container">
+                            <div class="carousel-track">
+                                <div class="process-item-intro">
+                                    <div class="process-icon">
+                                        <i class="fas fa-lightbulb"></i>
+                                    </div>
+                                    <h4 class="process-title">아이디어</h4>
+                                    <p class="process-desc">혁신적인 아이디어로 시작합니다</p>
+                                </div>
+                                <div class="process-item-intro">
+                                    <div class="process-icon">
+                                        <i class="fas fa-sitemap"></i>
+                                    </div>
+                                    <h4 class="process-title">기획</h4>
+                                    <p class="process-desc">체계적인 계획을 수립합니다</p>
+                                </div>
+                                <div class="process-item-intro">
+                                    <div class="process-icon">
+                                        <i class="fas fa-code"></i>
+                                    </div>
+                                    <h4 class="process-title">개발</h4>
+                                    <p class="process-desc">최신 기술로 구현합니다</p>
+                                </div>
+                                <div class="process-item-intro">
+                                    <div class="process-icon">
+                                        <i class="fas fa-vial"></i>
+                                    </div>
+                                    <h4 class="process-title">테스팅</h4>
+                                    <p class="process-desc">품질을 철저히 검증합니다</p>
+                                </div>
+                                <div class="process-item-intro">
+                                    <div class="process-icon">
+                                        <i class="fas fa-rocket"></i>
+                                    </div>
+                                    <h4 class="process-title">출시</h4>
+                                    <p class="process-desc">성공적인 런칭을 지원합니다</p>
+                                </div>
+                                <div class="process-item-intro">
+                                    <div class="process-icon">
+                                        <i class="fas fa-sync-alt"></i>
+                                    </div>
+                                    <h4 class="process-title">유지보수</h4>
+                                    <p class="process-desc">지속적인 개선과 관리</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-controls">
+                            <button class="carousel-btn prev"><i class="fas fa-chevron-left"></i></button>
+                            <div class="carousel-indicators"></div>
+                            <button class="carousel-btn next"><i class="fas fa-chevron-right"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 서비스 섹션 -->
+    <section id="services" class="section services">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">우리의 전문 서비스</h2>
+                <p class="section-subtitle">최신 기술과 트렌드를 반영한 다양한 개발 서비스를 제공합니다</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-globe"></i>
+                    </div>
+                    <h3 class="service-title">웹사이트 개발</h3>
+                    <p class="service-description">반응형 웹사이트부터 복잡한 웹 애플리케이션까지 모든 요구사항을 충족시키는 웹 개발 서비스를 제공합니다.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3 class="service-title">모바일 앱 개발</h3>
+                    <p class="service-description">iOS와 Android 플랫폼을 위한 네이티브 및 크로스 플랫폼 모바일 앱을 개발합니다.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-paint-brush"></i>
+                    </div>
+                    <h3 class="service-title">UX/UI 디자인</h3>
+                    <p class="service-description">사용자 중심의 직관적이고 매력적인 인터페이스 디자인으로 최적의 사용자 경험을 제공합니다.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-server"></i>
+                    </div>
+                    <h3 class="service-title">백엔드 개발</h3>
+                    <p class="service-description">안정적이고 확장 가능한 서버 시스템과 API를 구축하여 강력한 백엔드 솔루션을 제공합니다.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-shopping-cart"></i>
+                    </div>
+                    <h3 class="service-title">이커머스 솔루션</h3>
+                    <p class="service-description">맞춤형 쇼핑몰 및 결제 시스템을 개발하여 온라인 비즈니스 성장을 지원합니다.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <h3 class="service-title">AI 및 빅데이터</h3>
+                    <p class="service-description">인공지능과 데이터 분석 기술을 활용한 혁신적인 비즈니스 솔루션을 개발합니다.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 포트폴리오 섹션 -->
+    <section id="portfolio" class="section portfolio">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">포트폴리오</h2>
+                <p class="section-subtitle">다양한 산업 분야에서의 성공적인 프로젝트들을 소개합니다</p>
+            </div>
+            <div class="portfolio-filter">
+                <button class="filter-btn active" data-filter="all">전체</button>
+                <button class="filter-btn" data-filter="web">웹사이트</button>
+                <button class="filter-btn" data-filter="mobile">모바일 앱</button>
+                <button class="filter-btn" data-filter="ecommerce">이커머스</button>
+                <button class="filter-btn" data-filter="branding">브랜딩</button>
+            </div>
+            <div class="portfolio-grid">
+                <div class="portfolio-item" data-category="web">
+                    <div class="portfolio-image">
+                        <img src="assets/images/portfolio-1.png" alt="포트폴리오 1">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-info">
+                                <h3>F&B 사업자를 위한 식자재 유통 플랫폼</h3>
+                                <p>하이브리드 앱 개발 / ERP 시스템</p>
+                                <a href="https://www.식자재쿡.com/" target="_blank" class="portfolio-link">자세히 보기</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="mobile">
+                    <div class="portfolio-image">
+                        <img src="assets/images/portfolio-2.png" alt="포트폴리오 2">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-info">
+                                <h3>프랜차이즈를 위한 식자재 유통 앱 & 프랜차이즈 관리 대시보드</h3>
+                                <p>하이브리드 앱 개발 / ERP 시스템 / 프랜차이즈 대시보드</p>
+                                <a href="/assets/images/portfolio-2.png" target="_blank" class="portfolio-link">자세히
+                                    보기</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="ecommerce">
+                    <div class="portfolio-image">
+                        <img src="assets/images/portfolio-3.png" alt="포트폴리오 3">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-info">
+                                <h3>시스템 매매 종목 포착 및 주식 관련 데이터 제공 앱</h3>
+                                <p>하이브리드 앱 개발 / 관리자 대시보드</p>
+                                <a href="https://www.appairpoint.com/" target="_blank" class="portfolio-link">자세히 보기</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="branding">
+                    <div class="portfolio-image">
+                        <img src="assets/images/portfolio-4.png" alt="포트폴리오 4">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-info">
+                                <h3>인플루언서 & 자영업자 광고 매칭 플랫폼</h3>
+                                <p>하이브리드 앱 개발 / 관리자 대시보드</p>
+                                <a href="https://branding.aling.co.kr/" target="_blank" class="portfolio-link">자세히
+                                    보기</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="web">
+                    <div class="portfolio-image">
+                        <img src="assets/images/portfolio-5.png" alt="포트폴리오 5">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-info">
+                                <h3>레시피 기반 식자재 플랫폼</h3>
+                                <p>이커머스 웹사이트 / 추천인 리워드 (파트너스 시스템)</p>
+                                <a href="https://goddmart.com/" target="_blank" class="portfolio-link">자세히 보기</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="mobile">
+                    <div class="portfolio-image">
+                        <img src="assets/images/portfolio-6.png" alt="포트폴리오 6">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-info">
+                                <h3>다국어 번역 지원 커뮤니티 플랫폼</h3>
+                                <p>커뮤니티 웹사이트 / 21개 국어 자동번역</p>
+                                <a href="https://mykot.ai/" target="_blank" class="portfolio-link">자세히 보기</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="portfolio-cta">
+                <a href="#" class="btn btn-outline">더 많은 프로젝트 보기</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 프로세스 섹션 -->
+    <section id="process" class="section process">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">개발 프로세스</h2>
+                <p class="section-subtitle">체계적인 프로세스로 프로젝트를 성공적으로 완수합니다</p>
+            </div>
+            <div class="process-timeline">
+                <div class="process-item">
+                    <div class="process-number">01</div>
+                    <div class="process-content">
+                        <h3 class="process-title">요구사항 분석</h3>
+                        <p class="process-description">고객의 비즈니스 목표와 요구사항을 철저히 분석하여 프로젝트의 방향성을 설정합니다.</p>
+                    </div>
+                </div>
+                <div class="process-item">
+                    <div class="process-number">02</div>
+                    <div class="process-content">
+                        <h3 class="process-title">기획 및 설계</h3>
+                        <p class="process-description">분석된 요구사항을 바탕으로 시스템 구조와 UI/UX를 설계합니다.</p>
+                    </div>
+                </div>
+                <div class="process-item">
+                    <div class="process-number">03</div>
+                    <div class="process-content">
+                        <h3 class="process-title">개발 및 구현</h3>
+                        <p class="process-description">최신 기술과 방법론을 사용하여 안정적이고 효율적인 시스템을 개발합니다.</p>
+                    </div>
+                </div>
+                <div class="process-item">
+                    <div class="process-number">04</div>
+                    <div class="process-content">
+                        <h3 class="process-title">테스트 및 QA</h3>
+                        <p class="process-description">철저한 품질 검증을 통해 버그를 최소화하고 사용자 경험을 최적화합니다.</p>
+                    </div>
+                </div>
+                <div class="process-item">
+                    <div class="process-number">05</div>
+                    <div class="process-content">
+                        <h3 class="process-title">배포 및 런칭</h3>
+                        <p class="process-description">개발된 제품을 안정적으로 배포하고 성공적인 런칭을 지원합니다.</p>
+                    </div>
+                </div>
+                <div class="process-item">
+                    <div class="process-number">06</div>
+                    <div class="process-content">
+                        <h3 class="process-title">유지보수 및 지원</h3>
+                        <p class="process-description">지속적인 업데이트와 기술 지원으로 시스템의 안정성과 성능을 유지합니다.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 문의하기 섹션 -->
+    <section id="contact" class="section contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">프로젝트를 함께 시작해보세요</h2>
+                <p class="section-subtitle">귀사의 비즈니스 성장을 위한 첫 걸음을 Humming Code와 함께하세요</p>
+            </div>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <div class="info-item">
+                        <div class="info-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="info-content">
+                            <h3>주소</h3>
+                            <p>서울특별시 강남구 테헤란로 123, 8층</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <div class="info-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="info-content">
+                            <h3>이메일</h3>
+                            <p>info@humming.dev</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <div class="info-icon">
+                            <i class="fas fa-phone-alt"></i>
+                        </div>
+                        <div class="info-content">
+                            <h3>전화번호</h3>
+                            <p>02-123-4567</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" placeholder="이름" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" placeholder="이메일" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" id="phone" name="phone" placeholder="전화번호">
+                        </div>
+                        <div class="form-group">
+                            <select id="service" name="service">
+                                <option value="" disabled selected>관심 서비스</option>
+                                <option value="web">웹사이트 개발</option>
+                                <option value="mobile">모바일 앱 개발</option>
+                                <option value="ecommerce">이커머스 솔루션</option>
+                                <option value="uxui">UX/UI 디자인</option>
+                                <option value="backend">백엔드 개발</option>
+                                <option value="other">기타</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" placeholder="프로젝트에 대해 알려주세요" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-submit">문의하기</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 푸터 -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-logo">
+                    <a href="#">Humming<span>Code</span></a>
+                </div>
+                <div class="footer-social">
+                    <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-github"></i></a>
+                </div>
+            </div>
+            <div class="footer-content">
+                <div class="footer-menu">
+                    <h3>서비스</h3>
+                    <ul>
+                        <li><a href="#">웹사이트 개발</a></li>
+                        <li><a href="#">모바일 앱 개발</a></li>
+                        <li><a href="#">UX/UI 디자인</a></li>
+                        <li><a href="#">백엔드 개발</a></li>
+                        <li><a href="#">이커머스 솔루션</a></li>
+                    </ul>
+                </div>
+                <div class="footer-menu">
+                    <h3>회사 소개</h3>
+                    <ul>
+                        <li><a href="#">소개</a></li>
+                        <li><a href="#">팀</a></li>
+                        <li><a href="#">채용</a></li>
+                        <li><a href="#">블로그</a></li>
+                        <li><a href="#">연락처</a></li>
+                    </ul>
+                </div>
+                <div class="footer-menu">
+                    <h3>자원</h3>
+                    <ul>
+                        <li><a href="#">케이스 스터디</a></li>
+                        <li><a href="#">기술 블로그</a></li>
+                        <li><a href="#">개발 가이드</a></li>
+                        <li><a href="#">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="footer-newsletter">
+                    <h3>뉴스레터 구독</h3>
+                    <p>최신 기술 트렌드와 개발 소식을 받아보세요</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="이메일 주소">
+                        <button type="submit" class="btn btn-primary">구독</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p class="copyright">© 2025 Humming Code. All rights reserved.</p>
+                <div class="footer-links">
+                    <a href="#">이용약관</a>
+                    <a href="#">개인정보처리방침</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- 자바스크립트 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/ag-charts-community@11.3.1/dist/umd/ag-charts-community.js"></script>
+    <script src="js/data.js"></script>
+    <script src="js/main_2.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const loader = document.querySelector('.loader');
+            const header = document.querySelector('.header');
+
+            // Initial state - ensure header is hidden
+            header.style.transform = 'translate(0px, -100px)';
+            header.style.transition = 'transform 0.6s ease';
+
+            // After 3 seconds, hide loader and show header
+            setTimeout(function () {
+                // Hide loader
+                loader.style.opacity = '0';
+                loader.style.transition = 'opacity 0.5s ease';
+
+                // Show header
+                setTimeout(function () {
+                    header.style.transform = 'translate(0px, 0px)';
+                }, 300); // Slight delay for sequential animation
+
+                // Remove loader from DOM after fade completes
+                setTimeout(function () {
+                    loader.style.display = 'none';
+                }, 500);
+            }, 3000); // 3 seconds for loader
+        });
+    </script>
+</body>
+
+</html>
